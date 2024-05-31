@@ -1,0 +1,288 @@
+@import "../utils/utilities";
+@import "../utils/fonts";
+@import "../utils/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  width: 100%;
+  height: 100vh;
+
+  .container-head {
+    width: 100%;
+    height: 70px;
+    padding: 5px 40px;
+    box-shadow: 0 4px 2px -2px rgba(188, 186, 186, 0.2);
+    display: flex;
+    justify-content: space-between;
+
+    .dummy {
+      width: 100%;
+      margin: 0px;
+      display: flex;
+      justify-content: space-between;
+
+      .container-logo {
+        display: flex;
+        align-items: center;
+
+        p {
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+      }
+
+      .container-list {
+        display: flex;
+        justify-content: end;
+        color: $grey;
+
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: center;
+          align-items: center;
+          margin: 0px;
+
+          li {
+            margin-right: 30px;
+            font-size: 13px;
+            font-weight: 600;
+
+            sup {
+              font-size: 10px;
+              color: $pumkin;
+              margin-left: 5px;
+              margin-bottom: 5px;
+            }
+
+            a {
+              color: $grey;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: $pumkin;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bluecontainer {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: $lite;
+    background-color: $help;
+    padding: 60px 50px;
+
+    h2 {
+      padding-left: 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      padding-left: 40px;
+      font-size: 13px;
+    }
+
+    .infobox {
+      padding: 50px;
+      overflow-x: hidden;
+      width: 100%;
+      height: 100vh;
+      background-color: $lite;
+      display: flex;
+
+      .sidebar1 {
+        cursor: pointer;
+        flex: 2;
+        height: 100%;
+        width: 100%;
+
+        padding: 10px 0px 10px 10px;
+        background-color: #edf1f7;
+
+        ul {
+          color: $grey;
+          font-size: 13px;
+          font-weight: 600;
+
+          li {
+            list-style-type: none;
+            padding: 15px;
+          }
+
+          .tap1,
+          .tap2,
+          .tap3 {
+            width: 100%;
+            height: 50px;
+
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          .heading-active {
+            background-color: $lite;
+          }
+
+          .tap1:hover,
+          .tap2:hover,
+          .tap3:hover {
+            background-color: $lite;
+          }
+        }
+      }
+
+      .sidebar2 {
+        flex: 8;
+        height: 100%;
+        width: 100%;
+
+        position: relative;
+
+        .page1 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          display: none;
+          padding: 5px 10px 10px 60px;
+          .p1-para {
+            color: $grey;
+            padding: 20px 0px;
+          }
+          .p1-1 {
+            padding: 15px 0px;
+            display: flex;
+            justify-content: space-between;
+            color: $grey;
+            padding: 25px 0px;
+            box-shadow: 0 2px 2px -2px rgb(155, 155, 155);
+
+            p {
+              padding: 0;
+              margin: 0;
+            }
+          }
+          .p1-1:hover {
+            color: $pumkin;
+            cursor: pointer;
+          }
+        }
+        .page2 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          padding: 5px 10px 10px 60px;
+          display: none;
+
+          .p2-para {
+            color: $grey;
+            padding: 20px 0px;
+          }
+          .p2-1 {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            color: $grey;
+            padding: 25px 0px;
+            box-shadow: 0 2px 2px -2px rgb(155, 155, 155);
+            p {
+              padding: 0;
+              margin: 0;
+            }
+          }
+          .p2-1:hover {
+            color: $pumkin;
+            cursor: pointer;
+          }
+        }
+        .page3 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          padding: 5px 10px 10px 60px;
+          display: none;
+          .p3-para {
+            color: $grey;
+            padding: 20px 0px;
+          }
+          .p3-1 {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            color: $grey;
+            padding: 25px 0px;
+            box-shadow: 0 2px 2px -2px rgb(155, 155, 155);
+            p {
+              padding: 0;
+              margin: 0;
+            }
+          }
+          .p3-1:hover {
+            color: $pumkin;
+            cursor: pointer;
+          }
+        }
+        .display-page {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .bluecontainer::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .maincontainer {
+    .container-head {
+      padding: 0px;
+
+      .dummy {
+        .container-list {
+          ul {
+            span {
+              display: none;
+            }
+            li {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+    .bluecontainer {
+      padding: 0px;
+      .infobox {
+        padding: 0px;
+      }
+    }
+    .sidebar2 {
+      #page1 {
+        padding: 10px;
+      }
+    }
+    .sidebar2 {
+      #page2 {
+        padding: 10px;
+      }
+    }
+    .sidebar2 {
+      #page3 {
+        padding: 10px;
+      }
+    }
+  }
+}

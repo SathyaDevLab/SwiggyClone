@@ -1,0 +1,137 @@
+$padding : 3px;
+$margin : 3px;
+
+$utilities: (
+    "padding":("prefix" : "p",
+        "value" :("1" : $padding*2,
+            "2" : $padding*4,
+            "3" : $padding*6,
+            "4" : $padding*8,
+            "5" : $padding*10,
+            "6" : $padding*12,
+            "7" : $padding*14,
+            "8" : $padding*16,
+            "9" : $padding*18 ),
+    ),
+
+    "padding-left":("prefix" : "pl",
+        "value" :("1" : $padding*2,
+            "2" : $padding*4,
+            "3" : $padding*6,
+            "4" : $padding*8,
+            "5" : $padding*10,
+            "6" : $padding*12,
+            "7" : $padding*14,
+            "8" : $padding*16,
+            "9" : $padding*18 ),
+    ),
+
+    "padding-right":("prefix" : "pr",
+        "value" :("1" : $padding*2,
+            "2" : $padding*4,
+            "3" : $padding*6,
+            "4" : $padding*8,
+            "5" : $padding*10,
+            "6" : $padding*12,
+            "7" : $padding*14,
+            "8" : $padding*16,
+            "9" : $padding*18 ),
+    ),
+
+    "padding-top":("prefix" : "pt",
+        "value" :("1" : $padding*2,
+            "2" : $padding*4,
+            "3" : $padding*6,
+            "4" : $padding*8,
+            "5" : $padding*10,
+            "6" : $padding*12,
+            "7" : $padding*14,
+            "8" : $padding*16,
+            "9" : $padding*18 ),
+    ),
+
+    "padding-bottom":("prefix" : "pb",
+        "value" :("1" : $padding*2,
+            "2" : $padding*4,
+            "3" : $padding*6,
+            "4" : $padding*8,
+            "5" : $padding*10,
+            "6" : $padding*12,
+            "7" : $padding*14,
+            "8" : $padding*16,
+            "9" : $padding*18 ),
+    ),
+
+    "margin":("prefix" : "m",
+        "value" :("1" : $margin*2,
+            "2" : $margin*4,
+            "3" : $margin*6,
+            "4" : $margin*8,
+            "5" : $margin*10,
+            "6" : $margin*12,
+            "7" : $margin*14,
+            "8" : $margin*16,
+            "9" : $margin*18 ),
+    ),
+
+    "margin-left":("prefix" : "ml",
+        "value" :("1" : $margin*2,
+            "2" : $margin*4,
+            "3" : $margin*6,
+            "4" : $margin*8,
+            "5" : $margin*10,
+            "6" : $margin*12,
+            "7" : $margin*14,
+            "8" : $margin*16,
+            "9" : $margin*18 ),
+    ),
+
+    "margin-right":("prefix" : "mr",
+        "value" :("1" : $margin*2,
+            "2" : $margin*4,
+            "3" : $margin*6,
+            "4" : $margin*8,
+            "5" : $margin*10,
+            "6" : $margin*12,
+            "7" : $margin*14,
+            "8" : $margin*16,
+            "9" : $margin*18 ),
+    ),
+
+    "margin-top":("prefix" : "mt",
+        "value" :("1" : $margin*2,
+            "2" : $margin*4,
+            "3" : $margin*6,
+            "4" : $margin*8,
+            "5" : $margin*10,
+            "6" : $margin*12,
+            "7" : $margin*14,
+            "8" : $margin*16,
+            "9" : $margin*18 ),
+    ),
+
+    "margin-bottom":("prefix" : "mb",
+        "value" :("1" : $margin*2,
+            "2" : $margin*4,
+            "3" : $margin*6,
+            "4" : $margin*8,
+            "5" : $margin*10,
+            "6" : $margin*12,
+            "7" : $margin*14,
+            "8" : $margin*16,
+            "9" : $margin*18 ),
+    ),
+);
+
+
+@each $property, $map in $utilities {
+    $prefix: map-get($map , "prefix");
+    $value: map-get($map , "value");
+
+    @each $key , $val in $value {
+        .#{$prefix}-#{$key} {
+            #{$property}: $val;
+        }
+    }
+
+}

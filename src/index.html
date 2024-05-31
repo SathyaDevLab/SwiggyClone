@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy - Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../images/headlogo/swiggy-icon.svg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="maincontainer">
+      <div class="sideBarLeftToRight" id="comeoutLeft">
+        <div class="xmmark">
+          <i onclick="hideLeftSidebar()" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="input">
+          <input type="text" placeholder="Search for area, streetname.." />
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <div class="locationside">
+            <h4>Get current location</h4>
+            <p>Using GPS</p>
+          </div>
+        </div>
+      </div>
+      <div class="sideBarRightToLeft" id="comeoutRight">
+        <i onclick="hideRightsidebar()" class="fa-solid fa-xmark"></i>
+        <br />
+        <div class="sidebarcont-1">
+          <div class="sidebarhead">
+            <h2>Login</h2>
+            <p>or <span>create an account</span></p>
+          </div>
+
+          <img
+            src="../images/login/dhosa-roll.avif"
+            width="80px"
+            height="80px"
+            alt="Dhosa Roll"
+          />
+        </div>
+        <div class="sidebarinput">
+          <input type="text " placeholder="Phone Number" name="" id="" />
+        </div>
+        <div class="sidebarsubmit">
+          <button type="submit">LOGIN</button>
+        </div>
+        <div class="sidebarfooter">
+          <p>
+            By clicking on Login, I accept the Terms & Conditions & Privacy
+            Policy
+          </p>
+        </div>
+      </div>
+
+      <div class="container-head">
+        <div class="dummy">
+          <div class="container-logo">
+            <div>
+              <img
+                src="../images/headlogo/swiggy-icon.svg"
+                height="45px"
+                width="45px"
+                alt="Swiggy Icon"
+              />
+            </div>
+            <div>
+              <p onclick="ShowLeftSidebar()" class="ml-4">
+                <span>Other</span>
+                <i class="fa-solid fa-caret-down ml-3 text-pumkin"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="container-list">
+            <ul>
+              <li class="active li">
+                <a href="./pages/search.html"
+                  ><i class="fa-solid fa-magnifying-glass mr-2"></i>
+                  <span>Search</span>
+                </a>
+              </li>
+              <li class="li">
+                <a href="./pages/offers.html">
+                  <i class="fa-solid fa-percent mr-2"></i>
+                  <span>Offers<sup>NEW</sup></span></a
+                >
+              </li>
+              <li class="li">
+                <a href="./pages/help.html"
+                  ><i class="fa-regular fa-life-ring mr-2"></i>
+                  <span> Help </span>
+                </a>
+              </li>
+
+              <li class="actiee" onclick="showRightsidebar()">
+                <i class="fa-regular fa-user mr-2"></i>
+                <span class="lii"> Sign in</span>
+              </li>
+
+              <li class="li">
+                <a href="./pages/cart.html">
+                  <i class="fa-solid fa-cart-shopping mr-2"></i>
+                  <span>Cart</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-body1">
+        <div class="container-line1">
+          <div class="head1">
+            <h3>What's on your mind?</h3>
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="content1">
+            <img
+              src="../images/foods/biriyani.png"
+              width="200px"
+              height="180px"
+              alt="Biriyani"
+            />
+            <img
+              src="../images/foods/burger.png"
+              width="200px"
+              height="180px"
+              alt="Burger"
+            />
+            <img
+              src="../images/foods/cakes.png"
+              width="200px"
+              height="180px"
+              alt="Cakes"
+            />
+            <img
+              src="../images/foods/momos.png"
+              width="200px"
+              height="180px"
+              alt="Momos"
+            />
+            <img
+              src="../images/foods/paniyaram.png"
+              width="200px"
+              height="180px"
+              alt="Paniyaram"
+            />
+            <img
+              src="../images/foods/pav-bhaji.png"
+              width="200px"
+              height="180px"
+              alt="Pav Bhaji"
+            />
+            <img
+              src="../images/foods/pizza.png"
+              width="200px"
+              height="180px"
+              alt="Pizza"
+            />
+            <img
+              src="../images/foods/rolls.png"
+              width="200px"
+              height="180px"
+              alt="Rolls"
+            />
+            <img
+              src="../images/foods/samosas.png"
+              width="200px"
+              height="180px"
+              alt="Samosas"
+            />
+            <img
+              src="../images/foods/sandwich.png"
+              width="200px"
+              height="180px"
+              alt="Sandwich"
+            />
+            <img
+              src="../images/foods/shawarma.png"
+              width="200px"
+              height="180px"
+              alt="Shawarma"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-body2">
+        <div class="container-line2">
+          <div class="head2">
+            <div class="head2">
+              <h3>Top restaurant chains in Chennai</h3>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="content2">
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (1).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Chinese Wok</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 40-45 mins
+              </p>
+              <p class="f-lite">
+                Burgers, American Uthandi, Beverages Sholinganallur, OMR
+              </p>
+            </div>
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (10).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Domino's Pizza</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 25 mins
+              </p>
+              <p class="f-lite">
+                Pizzas, Italian, Pastas, Desserts Sholinganallur, OMR
+              </p>
+            </div>
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (11).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Subway</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.4 • 20-25 mins
+              </p>
+              <p class="f-lite">
+                Salads, Snacks, Desserts, Beverages Sholinganallur, OMR
+              </p>
+            </div>
+
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (12).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+
+              <p class="f-dark">Burger King</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 40-45 mins
+              </p>
+              <p class="f-lite">
+                Burgers, American Uthandi, Beverages Sholinganallur, OMR
+              </p>
+            </div>
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (2).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Gourmet Burger Collection</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.2 • 30-35 mins
+              </p>
+              <p class="f-lite">
+                Burgers, Beverages, Cafe, Desserts OMR Navalur
+              </p>
+            </div>
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (3).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">McDonald's</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 25-30 mins
+              </p>
+              <p class="f-lite">
+                Burgers, Beverages, Cafe, Desserts ,Semmancheri
+              </p>
+            </div>
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (4).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Oven Story Pizza</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.1 • 23-33 mins
+              </p>
+              <p class="f-lite">
+                Pizzas, Pastas, Italian, Desserts, Beverages Medavakkam
+              </p>
+            </div>
+
+            <div class="imageforcontent2">
+              <img
+                src="../images/top-restaurants/restaurant (5).png"
+                height="160px"
+                width="250px"
+                alt="Restaurant Image"
+              />
+              <p class="f-dark">Faasos - Wraps</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 40-45 mins
+              </p>
+              <p class="f-lite">
+                Kebabs, Fast Food, Snacks,Healthy Food, Desserts, Beverages
+                Medavakkam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-body3">
+        <div class="container-line3">
+          <div class="head3">
+            <h3>Restaurants with online food delivery in Chennai</h3>
+          </div>
+
+          <div class="head3-1">
+            <p>Filter <i class="fa-solid fa-filter"></i></p>
+            <p>Sort By <i class="fa-solid fa-caret-down"></i></p>
+            <p>Fast Delivery</p>
+            <p>New on Swiggy</p>
+            <p>Ratings 4.0+</p>
+            <p>Pure Veg</p>
+            <p>Offers</p>
+            <p>Rs. 300-Rs. 600</p>
+            <p>Less than Rs. 300</p>
+          </div>
+
+          <div class="content3">
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (1).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Burger King</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 40-45 mins
+              </p>
+              <p class="f-lite">
+                Burgers, American Uthandi, Beverages Sholinganallur, OMR
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (2).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Chinese Wok</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 40-45 mins
+              </p>
+              <p class="f-lite">Burgers, American Sholinganallur, OMR</p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (3).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">box8</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 30-35 mins
+              </p>
+              <p class="f-lite">desi-meals Sholinganallur, OMR</p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (4).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Chinese</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.1 • 40-45 mins
+              </p>
+              <p class="f-lite">
+                Burgers, American Uthandi, Beverages Sholinganallur, OMR
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (5).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Al arabian</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.2 • 15-20 mins
+              </p>
+              <p class="f-lite">
+                Arabian, Biryani, Chinese, Tandoor Karapakkam
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (6).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Daily Kitchen</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.4 • 12-22 mins
+              </p>
+              <p class="f-lite">Home Food, Indian, Thalis Parameswaran Nagar</p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (7).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Ambur Star Briyani</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 20-25 mins
+              </p>
+              <p class="f-lite">
+                Indian, Chinese, Arabian, Continental Sholinganallur
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (8).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Burger King</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.4 • 20-25 mins
+              </p>
+              <p class="f-lite">Burgers, American OMR Thoraipakam</p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (9).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Andhra Chillies</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.2 • 15-20 mins
+              </p>
+              <p class="f-lite">
+                Andhra, South Indian, Biryani, Chettinad Sholinganallur
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (10).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Mani's Dum Biryani</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.5 • 30-35 mins
+              </p>
+              <p class="f-lite">Andhra, Biryani, North Indian OMR Navalur</p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (12).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Kulambu Kadai</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.5 • 30-35 mins
+              </p>
+              <p class="f-lite">
+                South Indian, Chinese, Biryani, Seafood, North Indian Karapakkam
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (13).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Great Indian Khichdi</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 15-20 mins
+              </p>
+              <p class="f-lite">
+                Indian, Home Food, Healthy Food, Snacks Muthamzhil Nagar
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (14).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">LunchBox</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.3 • 30-35 mins
+              </p>
+              <p class="f-lite">
+                Biryani, North Indian, Punjabi, Healthy Food, Desserts,
+                Beverages Karapakkam
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (15).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">HRX by EatFit</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.6 • 20-25 mins
+              </p>
+              <p class="f-lite">
+                Healthy Food, Salads, Keto, Pastas Muthamzhil Nagar Karapakkam
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (16).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">MOJO Pizza</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.4 • 19-29 mins
+              </p>
+              <p class="f-lite">
+                Pizzas, Italian, Fast Food, Desserts Parameswaran Nagar
+                Karapakkam
+              </p>
+            </div>
+            <div class="content3-image">
+              <img
+                src="../images/online-restaurants/online-restaurant (17).png"
+                height="140px"
+                width="200px"
+                alt="Online Restaurant"
+              />
+              <p class="f-dark">Usthad Hotel</p>
+              <p class="f-dark">
+                <span style="color: rgb(74, 206, 114)">
+                  <i class="fa-solid fa-star"></i> </span
+                >4.4 • 19-29 mins
+              </p>
+              <p class="f-lite">Biryani, Chinese, Indian, Kerala Karapakkam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rectanglecont1">
+        <div class="rectangleone">
+          <div class="rectanglecont1-1">
+            <p>Best Places to Eat Across Cities</p>
+          </div>
+
+          <div class="rectanglecont1-12">
+            <p>bangalore best restaurants</p>
+            <p>pune best restaurants</p>
+            <p>mumbai best restaurants</p>
+            <p>delhi best restaurants</p>
+            <p>hyderabad best restaurants</p>
+            <p>kolkata best restaurants</p>
+            <p>chennai best restaurants</p>
+            <p>chandigarh best restaurants</p>
+            <p>ahmedabad best restaurants</p>
+            <p>jaipur best restaurants</p>
+            <p>nagpur best restaurants</p>
+            <p>show more <i class="fa-solid fa-caret-down pl-2"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rectanglecont2">
+        <div class="rectangletwo">
+          <div class="rectanglecont2-2">
+            <p>Best Cuisines Near Me</p>
+          </div>
+
+          <div class="rectanglecont1-12">
+            <p>chinese restaurants near me</p>
+            <p>south indian restaurants near me</p>
+            <p>indian restaurants near me</p>
+            <p>kerala restaurants near me</p>
+            <p>korean restaurants near me</p>
+            <p>north indian restaurants near me</p>
+            <p>seafood restaurants near me</p>
+            <p>bengali restaurants near me</p>
+            <p>punjabi restaurants near me</p>
+            <p>italian restaurants near me</p>
+            <p>andhra restaurants near me</p>
+            <p>show more <i class="fa-solid fa-caret-down pl-2"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer1">
+        <p>
+          For better experience,download <br />
+          the Swiggy app now
+        </p>
+        <div class="footer1-img">
+          <img
+            class="one"
+            src="../images/google-play-store.webp"
+            height="60px"
+            width="190px"
+            alt="Google play Store"
+          />
+          <img
+            src="../images/apple-play-store.svg"
+            height="59px"
+            width="190px"
+            alt="Apple Play Store"
+          />
+        </div>
+      </div>
+
+      <div class="footer2">
+        <div class="cont1">
+          <img src="../images/swiggy-logo.png" alt="Swiggy Logo" />
+          <p>© 2024 Bundl Technologies Pvt. Ltd</p>
+        </div>
+        <div class="cont2">
+          <p id="head">Company</p>
+          <p>About</p>
+          <p>Careers</p>
+          <p>Team</p>
+          <p>Swiggy One</p>
+          <p>Swiggy Instamart</p>
+          <p>Swiggy Genie</p>
+        </div>
+        <div class="cont3">
+          <div class="cont3-p1">
+            <p id="head">Contact us</p>
+            <p>Help & Support</p>
+            <p>Partner with us</p>
+            <p>Ride with us</p>
+          </div>
+          <div class="cont3-p2">
+            <p id="head">Legal</p>
+            <p>Terms & Conditions</p>
+            <p>Cookie Policy</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+        <div class="cont4">
+          <p id="head">We deliver to:</p>
+          <p>Bangalore</p>
+          <p>Gurgaon</p>
+          <p>Hyderabad</p>
+          <p>Delhi</p>
+          <p>Mumbai</p>
+          <p>Pune</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

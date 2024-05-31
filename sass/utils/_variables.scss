@@ -1,0 +1,21 @@
+$grey:#3d4152;
+$pumkin: #FC8019;
+$lite:#fff;
+$dark:#000;
+$help:#37718e;
+
+
+$colors : (
+    "grey":#3d4152,
+    "pumkin":#FC8019,
+    "lite":#fff,
+    "dark":#000
+    
+);
+
+@each $key,$val in $colors{
+    .text-#{$key}{
+        color:$val;
+    }
+}
+
